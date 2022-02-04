@@ -1,6 +1,5 @@
-from verificac19 import service
+from tests.setup import run_all
 
 
 def pytest_sessionstart(session):
-    print("Updating cache... Please wait..")
-    service.update_all()
+    run_all()
